@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DarkSky Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search for a city..."
+        />
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="location-btn">
+          <i class="fas fa-location-arrow"></i>
+        </button>
+      </div>
+
+      <div class="weather-container">
+        <div class="weather-header">
+          <div class="city-name">--</div>
+          <div class="date">-- --, ----</div>
+        </div>
+
+        <div class="weather-main">
+          <div class="temperature">--°C</div>
+          <div class="weather-icon">
+            <i class="fas fa-question"></i>
+          </div>
+          <div class="weather-description">--</div>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail">
+            <i class="fas fa-temperature-high"></i>
+            <span class="detail-label">Feels Like</span>
+            <span class="detail-value feels-like">--°C</span>
+          </div>
+          <div class="detail">
+            <i class="fas fa-tint"></i>
+            <span class="detail-label">Humidity</span>
+            <span class="detail-value humidity">--%</span>
+          </div>
+          <div class="detail">
+            <i class="fas fa-wind"></i>
+            <span class="detail-label">Wind</span>
+            <span class="detail-value wind">-- km/h</span>
+          </div>
+          <div class="detail">
+            <i class="fas fa-compress-alt"></i>
+            <span class="detail-label">Pressure</span>
+            <span class="detail-value pressure">-- hPa</span>
+          </div>
+        </div>
+
+        <div class="forecast-container">
+          <div class="forecast-title">5-Day Forecast</div>
+          <div class="forecast-days"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
